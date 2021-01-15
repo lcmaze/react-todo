@@ -1,38 +1,116 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 95%;
+  max-width: 480px;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.13);
+}
+
+.todo-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  background: #eee;
+  margin: 8px 0px;
+  border-radius: 5px;
+  /* background: #6dd36d; */
+  /* border-radius: 5px;
+  color: #fff; */
+}
+.todo-item label{
+  flex: 1;
+  padding: 0px 5px;
+}
+.todo-item button{
+  background-color: #d83232;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.todo-item button:hover{
+  background-color: rgb(240, 66, 66);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+/* header  */
+.header{
+  margin: 0 auto;
+  padding: 1rem 0rem;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* add todo */
+.add-todo{
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  padding: 8px;
+  background: #fff;
 }
-
-.App-link {
-  color: #61dafb;
+.add-todo input{
+  flex: 1;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-todo button{
+  background-color: rgb(90, 80, 238);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.add-todo button:hover{
+  background-color: rgb(113, 103, 250);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: all .3s ease;
 }
